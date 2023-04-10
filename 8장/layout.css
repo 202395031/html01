@@ -1,0 +1,50 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+header {
+    background-color: rgb(55, 120, 146);
+    width: 80%;
+    margin-right: auto;  /*가운데로 정렬*/
+    margin-left: auto; /*가운데로 정렬*/
+    padding: 10px; /* 테두리와 내용 사이의 안쪽 여백 */
+    /* padding-left: 30px; */
+    /* padding-top: 10px ; */
+    /* padding-bottom: 20px; */
+    /* padding: 10px 20px 50px 60px; 각각 순서대로 위 오른 아래 왼쪽 */
+    overflow: hidden; /* float쓸때 배경에 문제가 생기는데 그때 쓰면 정상적으로 됨*/
+}
+
+h1 {
+    /* background-color: gray; */
+    font-size: 2em;
+}
+/* header의 자손인 h1 태그에 적용 */
+header h1 {
+    width: 40%;
+    color: white;
+    float: left; /* 상자의 위치를 바꿀때 씀*/
+
+}
+
+/* header의 자식인 nav에 적용*/
+header > nav {
+    /* background-color: white; */
+    width: 50%;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline; /* 블록 요소를 인라인 요소(한줄로 나열됨)로 바꿈 */
+    float: left;
+    margin: 15px;
+}
+
+a { /*or nav a or nav ul li a */
+    text-decoration: none; /* 이거 쓰면 하이퍼링크 밑에 밑줄 없어짐 */
+    color: white;
+}
