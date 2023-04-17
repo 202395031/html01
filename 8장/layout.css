@@ -4,15 +4,15 @@ body {
 
 header {
     background-color: rgb(55, 120, 146);
-    width: 80%;
-    margin-right: auto;  /*가운데로 정렬*/
-    margin-left: auto; /*가운데로 정렬*/
+    width: 80%; /* 가로 길이 */
+    margin-right: auto;  /* 가운데로 정렬 */
+    margin-left: auto; /* 가운데로 정렬 */
     padding: 10px; /* 테두리와 내용 사이의 안쪽 여백 */
     /* padding-left: 30px; */
     /* padding-top: 10px ; */
     /* padding-bottom: 20px; */
     /* padding: 10px 20px 50px 60px; 각각 순서대로 위 오른 아래 왼쪽 */
-    overflow: hidden; /* float쓸때 배경에 문제가 생기는데 그때 쓰면 정상적으로 됨*/
+    overflow: hidden; /* float쓸때 배경에 문제가 생기는데 그때 쓰면 정상적으로 됨 */
 }
 
 h1 {
@@ -23,11 +23,11 @@ h1 {
 header h1 {
     width: 40%;
     color: white;
-    float: left; /* 상자의 위치를 바꿀때 씀*/
+    float: left; /* 상자의 위치를 바꿀때 씀 */
 
 }
 
-/* header의 자식인 nav에 적용*/
+/* header의 자식인 nav에 적용 */
 header > nav {
     /* background-color: white; */
     width: 50%;
@@ -47,4 +47,60 @@ nav ul li {
 a { /*or nav a or nav ul li a */
     text-decoration: none; /* 이거 쓰면 하이퍼링크 밑에 밑줄 없어짐 */
     color: white;
+}
+
+section {
+    width: 80%;
+    margin-left: auto; /* 가운데로 정렬 */
+    margin-right: auto; /* 가운데로 정렬 */
+    border: 5px solid #333; /* 한번에 가능 */
+    /* border-width: ; 선의 두께
+    border-color: ; 종류
+    border-style: ; 색상 */
+    padding: 5px; /* 테두리와 내용 사이의 안쪽 여백 */
+}
+
+h2 {
+    font-size: 1.8em;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px 0px gray; /* 순서대로 x y 좌표 번짐, 흐림 (y 축은 수학에서의 y축이랑 다르고 0.0좌표는 상자의 왼쪽 위 부분임 */
+}
+
+h3 {
+    font-size: 1.3em;
+    padding: 15px 0px 15px 10px;
+    border-left: 8px solid rgb(207, 82, 103);
+}
+
+p {
+    line-height: 30px; /* 줄 간격 */
+    font-size: 15px;
+    margin: 20px;
+}
+
+dl {
+    line-height: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+
+dt {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(108, 176, 219)
+}
+
+#com4 ul {
+    line-height: 30px;
+}
+
+footer {
+    width: 80%;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
