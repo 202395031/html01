@@ -1,0 +1,10 @@
+img {
+    float: left;
+}
+
+header h1, header p {
+    float: right;
+}
+nav{
+    clear: both;
+}
