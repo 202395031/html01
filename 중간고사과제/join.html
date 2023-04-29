@@ -6,6 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>202395031_천승용</title>
         <link rel="stylesheet"  type="text/css" href="202395031.css">
+        <style>
+            h2 {
+                margin: 10px;
+                margin-top: 30px;
+                padding: 20px;
+                border-left: 8px solid rgb(255, 153, 36);
+                border-bottom: 1px solid rgb(255, 153, 36);
+            }
+            article {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul {
+                list-style-type: none;
+            }
+    
+            form div {
+                text-align: center;
+            }
+    
+            fieldset {
+                margin: 15px 10px;
+            }
+    
+            fieldset legend {
+                font-weight: bold;
+                font-size: 18px;
+                color: rgb(231, 14, 122);
+            }
+            ul li {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            label.title {
+                font-weight: bold;
+                width: 80px;
+                float: left;
+            }
+            #mar {
+                margin-right: 40px;
+            }
+            #mar input {
+                margin-left: 0;
+            }
+            div input {
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -35,14 +84,12 @@
                         <legend>개인 정보(필수입력)</legend>
                         <ul>
                             <li>
-                                <label for="user_id">
-                                    아이디 <input type="text" name="user_id" id="user_id" placeholder="이름을 입력하세요." autofocus required>
-                                </label>
+                                <label for="user_id" class="title">아이디</label>
+                                <input type="text" name="user_id" id="user_id" required>  
                             </li>
                             <li>
-                                <label for="user_pw">
-                                    <input type="password" name="user_pw" id="user_pw" required>
-                                </label>
+                                <label for="user_pw" class="title">비밀번호</label>
+                                <input type="password" name="user_pw" id="user_pw" required>
                             </li>
                         </ul>
                     </fieldset>
@@ -51,14 +98,20 @@
                         <legend>추가 정보(선택사항)</legend>
                         <ul>
                             <li>
-                                <label for="user_tel">전화번호</label>
+                                <label for="user_tel" class="title">전화번호</label>
                                 <input type="text" name="user_tel" id="user_tel">
                             </li>
                             <li>
-                                <label for="user_sex">성별
-                                    <input type="radio" name="user_sex" id="male" value="남">남
-                                    <input type="radio" name="user_sex" id="female" value="여" checked>여
-                                </label>
+                                <label for="user_sex" class="title">성별</label>
+                                <label for="user_sex" id="mar"><input type="radio" name="user_sex" id="male" value="남">남</label>
+                                <label for="user_sex" id="mar"><input type="radio" name="user_sex" id="female" value="여" checked>여</label>     
+                            </li>
+                            <li id="job">
+                                <label for="user_job" class="title">관심분야</label>
+                                <label id="mar"><input type="checkbox" name="user_job" id="C" value="C">C</label>
+                                <label id="mar"><input type="checkbox" name="user_job" id="py" value="파이썬">파이썬</label>
+                                <label id="mar"><input type="checkbox" name="user_job" id="R" value="R">R</label>
+                                <label id="mar"><input type="checkbox" name="user_job" id="app" value="앱인벤터">앱인벤터</label>
                             </li>
                         </ul>
                     </fieldset>
