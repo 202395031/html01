@@ -26,19 +26,24 @@
                 background-color: blue;
                 color: white;
             }
-            /* ~= 은 뒤에 적힌 단어가 포함되어 있으면 적용 jp 일때 jp 가능 jpn 불강능 jp- 불가능*/
-            [class ~= "button"] {
-                border: 2px solid black;
-                box-shadow: rgb(0, 0, 0, 0.4) 5px 5px;
+
+            /* $= href 일때 쓰고 특정 값으로 끝나느 속성에 스타일 적용하기, 파일 확장자명으로 쓸수 있음*/
+            a[href $= "hwp"] {
+                background: url(images/hwp_icon.gif) no-repeat left center;
+                padding: 5px 20px;
             }
+
+            a[href $= "xlsx"] {
+                background: url(images/excel_icon.gif) no-repeat left center;
+            }
+        
         </style>
     </head>
     <body>
+        <h2>학과 소개 파일 다운 받기</h2>
         <ul>
-            <li><a href="#">메뉴1</a></li>
-            <li><a href="#">메뉴2</a></li>
-            <li><a href="#" class="button">메뉴3</a></li>
-            <li><a href="#" class="flat button">메뉴4</a></li>
+            <li><a href="intro.hwp">한글 파일</a></li>
+            <li><a href="intro.xlsx">엑셀 파일</a></li>
         </ul>
     </body>
 </html>
