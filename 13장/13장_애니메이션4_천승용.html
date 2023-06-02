@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션 4 - 천승용</title>
+
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                margin-top: 50px;
+                margin-left: 100px;
+                background-color: goldenrod;
+                animation-name: change-shape;
+                animation-duration: 0.5s;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes change-shape {
+                from {
+                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                }
+                50% {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+                }
+
+                to {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+                }
+            } 
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
